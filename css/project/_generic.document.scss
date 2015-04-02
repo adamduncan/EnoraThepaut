@@ -1,0 +1,25 @@
+﻿//----------------------------------------------------------------------
+//	GENERIC
+//	Document
+//----------------------------------------------------------------------
+
+//	Document
+//-----------------------------------
+
+body {
+	background-color: #fff;
+	color: $dark-grey;
+	font-family: $base-font;
+}
+
+
+
+
+//	Text selection
+//-----------------------------------
+
+::selection {
+	background-color: rgba(#666, 0.8);
+	color: #fff;
+	text-shadow: none;
+}

@@ -1,0 +1,32 @@
+﻿//----------------------------------------------------------------------
+//	MASTER
+//
+//----------------------------------------------------------------------
+
+
+//	Setup
+//-----------------------------------
+
+// Core
+@import 'core/master.setup';
+
+// Client
+@import 'project/master.setup';
+
+
+
+//	Base
+//-----------------------------------
+@import 'project/master.base';
+
+
+
+
+//	Utilities
+//-----------------------------------
+
+// Core
+@import 'core/master.utilities';
+
+// Client
+@import 'project/master.utilities';

@@ -1,0 +1,31 @@
+﻿//----------------------------------------------------------------------
+//	GENERIC
+//	Document
+//----------------------------------------------------------------------
+
+//	Box-sizing
+//-----------------------------------
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+
+
+
+//	Document
+//-----------------------------------
+
+html {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+	overflow-y: scroll;
+}
+body {
+	font-size: 100%; /* 16px */
+	height: 100%;
+	line-height: $doc-line-height; /* 20px */
+}

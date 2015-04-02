@@ -1,0 +1,29 @@
+﻿{
+	"name": "EnoraThepaut",
+	"version": "1.0.0",
+	"contributors": [
+		{
+			"name": "Adam Duncan",
+			"email": "mail@adamduncandesigns.com"
+		}
+	],
+	"description": "Enora Thepaut",
+	"devDependencies": {
+		"grunt": "^0.4.5",
+		"grunt-autoprefixer": "^1.0.1",
+		"grunt-combine-media-queries": "^1.0.12",
+		"grunt-contrib-clean": "^0.6.0",
+		"grunt-contrib-concat": "^0.5.0",
+		"grunt-contrib-cssmin": "^0.10.0",
+		"grunt-contrib-jshint": "^0.10.0",
+		"grunt-contrib-sass": "^0.8.1",
+		"grunt-contrib-uglify": "^0.7.0",
+		"grunt-contrib-watch": "^0.6.1",
+		"grunt-flats": "^0.3.0",
+		"grunt-jscs": "^1.0.0",
+		"grunt-modernizr": "^0.6.0",
+		"grunt-perfbudget": "^0.1.6",
+		"grunt-scss-lint": "0.3.4",
+		"load-grunt-tasks": "^1.0.0"
+	}
+}
