@@ -19,7 +19,6 @@
 		"grunt-contrib-sass": "^0.8.1",
 		"grunt-contrib-uglify": "^0.7.0",
 		"grunt-contrib-watch": "^0.6.1",
-		"grunt-flats": "^0.3.0",
 		"grunt-jscs": "^1.0.0",
 		"grunt-modernizr": "^0.6.0",
 		"grunt-perfbudget": "^0.1.6",

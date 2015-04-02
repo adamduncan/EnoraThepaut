@@ -15,20 +15,21 @@
 }
 
 
-//	Lap
+
+
+//	Grid
 //-----------------------------------
 
-@include mq($lap) {
-
-	//	Rows
-	.row {
-		margin-left: -1.25rem; /* -20px */
-	}
+.grid {
+	margin-left: -1.25rem; /* -20px */
+}
 
 
-	//	Columns
-	[class^="lap-"],
-	[class^="desk-"] {
-		padding-left: 1.25em; /* 20px */
-	}
+
+
+//	Columns
+//-----------------------------------
+
+.grid__col {
+	padding-left: 1.25em; /* 20px */
 }

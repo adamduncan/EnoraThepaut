@@ -209,8 +209,7 @@ body {
 }
 
 .grid {
-	font-size: 0;
-	margin-left: -1.25rem; /* 20px */ /* clear */
+	font-size: 0; /* clear */
 }
 
 .grid:after {
@@ -234,7 +233,6 @@ body {
 .grid__col {
 	display: inline-block;
 	font-size: 1rem; /* 16px */
-	padding-left: 1.25em; /* 20px */
 	text-align: left;
 	vertical-align: top;
 	width: 100%;
@@ -276,6 +274,14 @@ body {
 
 .wrapper {
 	padding: 0 1.25em; /* 0 20px */
+}
+
+.grid {
+	margin-left: -1.25rem; /* -20px */
+}
+
+.grid__col {
+	padding-left: 1.25em; /* 20px */
 }
 
 .button {
@@ -572,15 +578,6 @@ video {
 .wrapper {
 	max-width: 64em; /* 1024px */
 	padding: 0 1.25em; /* 0 20px */
-}
-
-.row {
-	margin-left: -1.25rem; /* -20px */
-}
-
-[class^="lap-"],
-[class^="desk-"] {
-	padding-left: 1.25em; /* 20px */
 }
 
 .main-content {

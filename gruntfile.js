@@ -28,12 +28,6 @@ module.exports = function (grunt) {
 		//	Watch changes to project folders within css/ and js/,
 		//	files within core/ or packages/ should not be updated
 		watch: {
-			html: {
-				files: [
-					'_templates/*/**/*.html'
-				],
-				tasks: ['html']
-			},
 			css: {
 				files: [
 					'css/core/*.scss',
@@ -50,29 +44,6 @@ module.exports = function (grunt) {
 					'js/master.js'
 				],
 				tasks: ['js']
-			}
-		},
-
-
-		//	HTML
-		//-----------------------------------
-
-		//	Clean generated templates directory
-		clean: {
-			build: ['<%= flats.build.options.destPath %>/*.html', '!<%= flats.build.options.basePath %>/<%= flats.build.options.masterSrc %>']
-		},
-
-		//	Run grunt-flats with default config for templates
-		//	Run grunt-flats with alternate paths for styleguide, referencing same partials as templates
-		flats: {
-			build: {
-				options: {
-					basePath: '_templates',
-					//layoutPath: 'layouts',
-					//partialPath: 'partials',
-					masterSrc: 'masterpage/master.html',
-					destPath: '_templates'
-				}
 			}
 		},
 
@@ -229,9 +200,6 @@ module.exports = function (grunt) {
 
 	// Default
 	grunt.registerTask('default', []);
-
-	// HTML
-	grunt.registerTask('html', ['clean', 'flats']);
 
 	// CSS
 	grunt.registerTask('css', ['scsslint', 'sass', 'autoprefixer', 'cmq', 'modernizr', 'cssmin']);
