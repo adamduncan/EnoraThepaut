@@ -1,0 +1,37 @@
+﻿//----------------------------------------------------------------------
+//	COMPONENTS
+//	Paragraphs
+//----------------------------------------------------------------------
+
+//	Text content
+//-----------------------------------
+
+.p,
+.text-content p {
+	font-size: 1.125em; /* 18px */
+	line-height: 1.222; /* 22px from 18 */
+	margin-bottom: 1.111em; /* 20px from 18 */
+
+	@include mq($lap) {
+		line-height: 1.389; /* 25px from 18 */
+	}
+}
+
+
+
+
+//	Modified sizes
+//-----------------------------------
+
+.text-large,
+.text-content .text-large {
+	font-size: 1.875em; /* 30px */
+	line-height: 1.067; /* 32px from 30 */
+	margin-bottom: 0.6em; /* 18px from 30 */
+}
+
+.text-small,
+.text-content .text-small {
+	font-size: 0.938em; /* 15px */
+	line-height: 1.333; /* 20px from 15 */	
+}

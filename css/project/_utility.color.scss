@@ -1,9 +1,12 @@
 ﻿//----------------------------------------------------------------------
-//  MASTER
-//	Setup
+//	UTILITY
+//	Color
 //----------------------------------------------------------------------
 
-@import 'tools.placeholders';
-@import 'tools.mixins';
-@import 'generic.document';
-@import 'components.grid';
+.text-highlight {
+	color: $highlight;
+}
+
+.text-contrast {
+	color: $contrast;
+}

@@ -1,0 +1,96 @@
+﻿//----------------------------------------------------------------------
+//	COMPONENTS
+//	Navigation Primary
+//----------------------------------------------------------------------
+
+//  Nav container
+//-----------------------------------
+
+.container-master {
+	transition: all $duration $easing;
+}
+
+.container-nav-primary {
+	background-color: $highlight;
+	height: 100%;
+	left: -100%;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+	@include mq($lap) {
+		left: -20em; /* 320px */
+		width: 20em; /* 320px */
+	}
+}
+
+.nav-is-visible .container-master {
+	left: 100%;
+	
+	@include mq($lap) {
+		left: -20em; /* 320px */
+	}
+}
+
+.csstransforms3d.nav-is-visible .container-master {
+	left: auto;
+	transform: translate3d(100%, 0, 0);
+	
+	@include mq($lap) {
+		transform: translate3d(20em, 0, 0);
+	}
+}
+
+
+
+
+//  Nav toggles
+//-----------------------------------
+ 
+.btn-nav-toggle {
+	@extend %text-hidden;
+	background: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: 1em;
+	height: 3.125em; /* 50px */
+	left: 0;
+	outline: none;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 3.125em; /* 50px */
+
+	@include mq($lap) {
+		left: auto;
+		right: 0;
+	}
+}
+
+.btn-nav-close {
+	@include mq($lap - 1, max) {
+		left: -3.125em;
+		z-index: 1;
+	}
+}
+
+.btn-nav-close,
+.nav-is-visible .btn-nav-open {
+	display: none;
+}
+
+.btn-nav-open,
+.nav-is-visible .btn-nav-close {
+	display: block;
+}
+
+
+
+//  Nav primary
+//-----------------------------------
+
+.nav_primary {
+}
+.nav-primary__list-item {
+}

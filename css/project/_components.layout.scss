@@ -10,6 +10,11 @@
 
 	@include mq($lap) {
 		max-width: 93.75em; /* 1500px */
-		padding-left: 44px;
+		padding-left: 3.125em; /* 50px */
 	}
+}
+
+.section--text {
+	padding-bottom: 3.438em; /* 55px */
+	padding-top: 3.438em; /* 55px */
 }

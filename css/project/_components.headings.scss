@@ -1,0 +1,59 @@
+﻿//----------------------------------------------------------------------
+//	COMPONENTS
+//	Headings
+//----------------------------------------------------------------------
+
+//	Generic
+//-----------------------------------
+
+h1,
+h2,
+h3 {
+	font-weight: normal;
+}
+
+
+
+
+//	Heading 1
+//-----------------------------------
+
+.h1,
+.text-content h1 {
+
+}
+
+
+
+
+//	Heading 2
+//-----------------------------------
+
+.h2,
+.text-content h2 {
+	font-size: 0.75em; /* 12px */
+	line-height: 1.667; /* 20px from 12 */
+	margin-bottom: 0.833em; /* 10px */
+	text-transform: lowercase;
+
+	@include mq($lap) {
+		font-size: 0.813em; /* 13px */
+		line-height: 1.538; /* 20px from 13 */
+	}
+}
+
+.text-content p + h2 {
+	padding-top: 0.5em; /* 6px */
+}
+
+
+
+
+//	Bespoke
+//-----------------------------------
+
+/*.heading-inline {
+	@include mq($lap) {
+		display: inline-block;
+	}
+}*/

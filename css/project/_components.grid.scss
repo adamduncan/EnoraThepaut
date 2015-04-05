@@ -7,10 +7,10 @@
 //-----------------------------------
 
 .wrapper {
+	max-width: 40em; /* 640px */
 	padding: 0 1.25em; /* 0 20px */
-	@include mq($lap) {
-		max-width: 64em; /* 1024px */
-		padding: 0 1.25em; /* 0 20px */
+	@include mq($desk) {
+		max-width: 61.25em; /* 980px */
 	}
 }
 
@@ -21,7 +21,7 @@
 //-----------------------------------
 
 .grid {
-	margin-left: -1.25rem; /* -20px */
+	margin-left: -0.25rem; /* -4px */
 }
 
 
@@ -31,5 +31,5 @@
 //-----------------------------------
 
 .grid__col {
-	padding-left: 1.25em; /* 20px */
+	padding-left: 0.25em; /* 4px */
 }

@@ -4,12 +4,13 @@
 //----------------------------------------------------------------------
 
 .site-header {
-	background-color: #eee;
-	height: 44px;
+	background-color: $light-grey;
+	height: 3.125em; /* 50px */
+	position: relative;
 
 	@include mq($lap) {
 		height: 100%;
 		position: fixed;
-		width: 44px;
+		width: 3.125em; /* 50px */
 	}
 }

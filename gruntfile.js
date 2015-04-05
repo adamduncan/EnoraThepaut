@@ -149,10 +149,17 @@ module.exports = function (grunt) {
 			global: {
 				src: [
 					'js/core/*.js',
-					'js/packages/**/*.js',
+					'!js/core/loadJS.js',
 					'js/master.js'
 				],
 				dest: 'js/dist/global.js'
+			},
+			head: {
+				src: [
+					'js/core/loadJS.js',
+					'js/dist/modernizr-custom.js'
+				],
+				dest: 'js/dist/head.js'
 			}
 		},
 
@@ -172,9 +179,7 @@ module.exports = function (grunt) {
 					src: [
 						'css/core/*.scss',
 						'css/project/*.scss',
-						'css/packages/*.scss',
 						'css/master.scss',
-						'js/packages/*.js',
 						'js/master.js'
 					]
 				}
@@ -189,7 +194,7 @@ module.exports = function (grunt) {
 				},
 				files: {
 					'js/dist/global.min.js': ['js/dist/global.js'],
-					'js/dist/modernizr-custom.min.js': ['js/dist/modernizr-custom.js']
+					'js/dist/head.min.js': ['js/dist/head.js']
 				}
 			}
 		}
@@ -205,5 +210,5 @@ module.exports = function (grunt) {
 	grunt.registerTask('css', ['scsslint', 'sass', 'autoprefixer', 'cmq', 'modernizr', 'cssmin']);
 
 	// JS
-	grunt.registerTask('js', ['jshint', 'jscs', 'concat', 'modernizr', 'uglify']);
+	grunt.registerTask('js', ['jshint', 'jscs', 'modernizr', 'concat', 'uglify']);
 };
