@@ -3,44 +3,64 @@
 //	Navigation Primary
 //----------------------------------------------------------------------
 
-//  Nav container
+//  Site containers
 //-----------------------------------
 
-.container-master {
-	transition: all $duration $easing;
+.container-outer {
+	overflow: hidden;
+	width: 100%;
 }
+
+.container-wrap {
+	left: 0;
+	position: relative;
+	transition: left $duration $easing;
+}
+
+.nav-is-visible .container-wrap {
+	left: 100%;
+
+	@include mq($lap) {
+		left: 20em; /* 320px */
+	}
+}
+
+
+
+
+//  Nav container
+//-----------------------------------
 
 .container-nav-primary {
 	background-color: $highlight;
 	height: 100%;
 	left: -100%;
 	overflow: auto;
+	padding: 5em 1.25em 1.25em; /* 80px 20px 20px */
 	position: fixed;
 	top: 0;
+	transition: left $duration $easing;
 	width: 100%;
 
 	@include mq($lap) {
 		left: -20em; /* 320px */
+		padding-top: 2.188em; /* 35px */
 		width: 20em; /* 320px */
 	}
 }
 
-.nav-is-visible .container-master {
-	left: 100%;
-	
-	@include mq($lap) {
-		left: -20em; /* 320px */
-	}
+.nav-is-visible .container-nav-primary {
+	left: 0;
 }
 
-.csstransforms3d.nav-is-visible .container-master {
+/*.csstransforms3d.nav-is-visible .container-wrap {
 	left: auto;
-	transform: translate3d(100%, 0, 0);
+	transform: translateX(100%);
 	
 	@include mq($lap) {
-		transform: translate3d(20em, 0, 0);
+		transform: translateX(20em);
 	}
-}
+}*/
 
 
 
@@ -70,8 +90,7 @@
 
 .btn-nav-close {
 	@include mq($lap - 1, max) {
-		left: -3.125em;
-		z-index: 1;
+		left: -100%;
 	}
 }
 
@@ -90,7 +109,33 @@
 //  Nav primary
 //-----------------------------------
 
-.nav_primary {
+.nav-primary {
+	padding-top: 0.625em; /* 10px */
 }
+
 .nav-primary__list-item {
+	margin-bottom: 0.625em; /* 10px */
+}
+
+.nav-primary__link,
+.nav-primary__child-link {
+	font-size: 1.125em; /* 18px */
+	line-height: 1.222; /* 22px from 18 */
+}
+
+.nav-primary__link {
+	color: $dark-grey;
+}
+
+.nav-primary__child-list {
+	margin: 0.625em 0 1.25em; /* 10px 0 20px */
+}
+
+.nav-primary__child-list-item {
+	margin-bottom: 0.625em; /* 10px */
+}
+
+.nav-primary__child-link {
+	color: #fff;
+	font-style: italic;
 }

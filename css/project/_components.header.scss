@@ -6,11 +6,23 @@
 .site-header {
 	background-color: $light-grey;
 	height: 3.125em; /* 50px */
-	position: relative;
+	left: 0;
+	position: fixed;
+	top: 0;
+	transition: left $duration $easing;
+	width: 100%;
+	z-index: 1;
 
 	@include mq($lap) {
 		height: 100%;
-		position: fixed;
 		width: 3.125em; /* 50px */
+	}
+}
+
+.nav-is-visible .site-header {
+	left: 100%;
+
+	@include mq($lap) {
+		left: 20em;
 	}
 }

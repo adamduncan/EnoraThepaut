@@ -3,6 +3,11 @@
 //	Color
 //----------------------------------------------------------------------
 
+.text-reverse,
+.text-reverse a {
+	color: #fff;
+}
+
 .text-highlight {
 	color: $highlight;
 }

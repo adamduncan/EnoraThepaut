@@ -7,10 +7,12 @@
 //-----------------------------------
 
 .main-content {
+	margin-bottom: 3.438em; /* 55px */
+	padding-top: 3.125em; /* 50px */
 
 	@include mq($lap) {
 		max-width: 93.75em; /* 1500px */
-		padding-left: 3.125em; /* 50px */
+		padding: 0 0 0 3.125em; /* 0 0 0 50px */
 	}
 }
 
