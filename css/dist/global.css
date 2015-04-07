@@ -2,7 +2,8 @@
 
 /* 20px */
 
-.btn-nav-toggle {
+.btn-nav-open,
+.btn-nav-close {
 	overflow: hidden;
 	text-indent: 200%;
 	white-space: nowrap;
@@ -262,7 +263,7 @@ body {
 }
 
 body {
-	background-color: #fff;
+	background-color: #e9e9e9;
 	color: #111;
 	font-family: "Vollkorn", Georgia, Times, serif;
 }
@@ -350,8 +351,8 @@ ul {
 	width: 100%;
 }
 
-.media-wrap--3-2 {
-	padding-top: 66.66%;
+.media-wrap--1-1 {
+	padding-top: 100%;
 }
 
 .media-wrap--16-9 {
@@ -368,7 +369,8 @@ video {
 }
 
 .main-content {
-	margin-bottom: 3.438em; /* 55px */
+	background-color: #fff;
+	padding-bottom: 3.438em; /* 55px */
 	padding-top: 3.125em; /* 50px */
 }
 
@@ -431,7 +433,7 @@ h3 {
 	left: 0;
 	position: fixed;
 	top: 0;
-	transition: left 150ms ease-out;
+	transition: left 250ms ease-out;
 	width: 100%;
 	z-index: 1;
 }
@@ -448,7 +450,7 @@ h3 {
 .container-wrap {
 	left: 0;
 	position: relative;
-	transition: left 150ms ease-out;
+	transition: left 500ms ease-out;
 }
 
 .nav-is-visible .container-wrap {
@@ -456,19 +458,23 @@ h3 {
 }
 
 .container-nav-primary {
-	background-color: #fb341a;
+	background-color: #f5002e;
 	height: 100%;
 	left: -100%;
 	overflow: auto;
-	padding: 5em 1.25em 1.25em; /* 80px 20px 20px */
 	position: fixed;
 	top: 0;
-	transition: left 150ms ease-out;
+	transition: left 500ms ease-out;
 	width: 100%;
 }
 
 .nav-is-visible .container-nav-primary {
 	left: 0;
+}
+
+.container-nav-primary__inner {
+	max-width: 20em; /* 320px */
+	padding: 5em 1.25em 1.25em; /* 80px 20px 20px */
 }
 
 /*.csstransforms3d.nav-is-visible .container-wrap {
@@ -486,12 +492,16 @@ h3 {
 	cursor: pointer;
 	font-size: 1em;
 	height: 3.125em; /* 50px */
-	left: 0;
 	outline: none;
 	padding: 0;
-	position: absolute;
-	top: 0;
 	width: 3.125em; /* 50px */
+}
+
+.btn-nav-open,
+.btn-nav-close {
+	left: 0;
+	top: 0;
+	position: absolute;
 }
 
 .btn-nav-close,
@@ -502,6 +512,34 @@ h3 {
 .btn-nav-open,
 .nav-is-visible .btn-nav-close {
 	display: block;
+}
+
+.btn-nav-prev,
+.btn-nav-next {
+	color: #fff;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: background-color 250ms ease-out, width 250ms ease-out;
+}
+
+.btn-nav-prev {
+	right: 3.125em; /* 50px */
+}
+
+.btn-nav-prev:hover,
+.btn-nav-prev:focus,
+.btn-nav-next:hover,
+.btn-nav-next:focus {
+	background-color: #2b4379;
+}
+
+.btn-nav-prev span,
+.btn-nav-next span {
+	display: none;
+	width: 0;
 }
 
 .nav-primary {
@@ -536,7 +574,7 @@ h3 {
 }
 
 .site-footer {
-	background-color: #2f459b;
+	background-color: #2b4379;
 	padding-bottom: 3.438em; /* 55px */
 	padding-top: 3.438em; /* 55px */
 	position: relative;
@@ -557,11 +595,11 @@ h3 {
 }
 
 .text-highlight {
-	color: #fb341a;
+	color: #f5002e;
 }
 
 .text-contrast {
-	color: #2f459b;
+	color: #2b4379;
 }
 
 .hidden {
@@ -775,8 +813,9 @@ h3 {
 }
 
 .main-content {
-	max-width: 93.75em; /* 1500px */
-	padding: 0 0 0 3.125em; /* 0 0 0 50px */
+	max-width: 106.25em; /* 1700px */
+	padding-left: 3.125em; /* 50px */
+	padding-top: 0;
 }
 
 .h2,
@@ -805,17 +844,69 @@ h3 {
 
 .container-nav-primary {
 	left: -20em; /* 320px */
-	padding-top: 2.188em; /* 35px */
 	width: 20em; /* 320px */
 }
 
-.btn-nav-toggle {
+.container-nav-primary__inner {
+	padding-top: 2.188em; /* 35px */
+}
+
+.btn-nav-open,
+.btn-nav-close {
 	left: auto;
 	right: 0;
 }
 
+.btn-nav-prev,
+.btn-nav-next {
+	left: 0;
+	right: auto;
+	top: 25em; /* 400px */
+}
+
+.btn-nav-prev {
+	left: 0;
+	margin-top: -3.125em; /* 50px */
+	padding-left: 3.125em; /* 50px */
+	right: auto;
+}
+
+.btn-nav-next {
+	padding-right: 3.125em; /* 50px */
+}
+
+.btn-nav-prev:hover,
+.btn-nav-prev:focus,
+.btn-nav-next:hover,
+.btn-nav-next:focus {
+	width: auto;
+}
+
+.btn-nav-prev span,
+.btn-nav-next span {
+	display: block;
+	font-size: 1.125em; /* 18px */
+	line-height: 2.778; /* 50px from 18 */
+	text-transform: lowercase;
+	white-space: nowrap;
+	width: auto;
+}
+
+.btn-nav-prev span {
+	padding-right: 1em; /* 18px */
+}
+
+.btn-nav-next span {
+	padding-left: 1em; /* 18px */
+}
+
+.site-footer__inner {
+	max-width: 106.25em; /* 1700px */
+	padding-left: 3.125em; /* 50px */
+}
+
 .hero {
-	padding-top: 62.5%;
+	padding-top: 56.25%;
 }
 
 .float-lap--left {
@@ -955,7 +1046,7 @@ h3 {
 }
 
 .wrapper {
-	max-width: 61.25em; /* 980px */
+	max-width: 50em; /* 800px */
 }
 
 .display-desk--none {
@@ -968,6 +1059,14 @@ h3 {
 
 .float-desk--right {
 	float: right;
+}
+
+}
+
+@media screen and (min-width: 75em) {
+
+.wrapper {
+	max-width: 61.25em; /* 980px */
 }
 
 }

@@ -16,7 +16,7 @@ $base-font: 'Vollkorn', Georgia, Times, serif;
 //-----------------------------------
 
 //	Transition
-$duration: 150ms;
+$duration: 250ms;
 $easing: ease-out;
 
 
@@ -26,10 +26,11 @@ $easing: ease-out;
 //-----------------------------------
 
 $dark-grey: #111;
-$mid-grey: #999;
+//$mid-grey: #999;
 $light-grey: #e9e9e9;
-$highlight: #fb341a;
-$contrast: #2f459b;
+$highlight: #f5002e;
+$contrast: #2b4379;
+$alt-highlight: #fff000;
 
 
 
@@ -40,3 +41,4 @@ $contrast: #2f459b;
 //	Breakpoints (in px)
 $lap: 700;
 $desk: 900;
+$max: 1200;

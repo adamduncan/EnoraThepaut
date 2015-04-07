@@ -14,7 +14,7 @@
 .container-wrap {
 	left: 0;
 	position: relative;
-	transition: left $duration $easing;
+	transition: left $duration*2 $easing;
 }
 
 .nav-is-visible .container-wrap {
@@ -36,21 +36,28 @@
 	height: 100%;
 	left: -100%;
 	overflow: auto;
-	padding: 5em 1.25em 1.25em; /* 80px 20px 20px */
 	position: fixed;
 	top: 0;
-	transition: left $duration $easing;
+	transition: left $duration*2 $easing;
 	width: 100%;
 
 	@include mq($lap) {
 		left: -20em; /* 320px */
-		padding-top: 2.188em; /* 35px */
 		width: 20em; /* 320px */
 	}
 }
 
 .nav-is-visible .container-nav-primary {
 	left: 0;
+}
+
+.container-nav-primary__inner {
+	max-width: 20em; /* 320px */
+	padding: 5em 1.25em 1.25em; /* 80px 20px 20px */
+
+	@include mq($lap) {
+		padding-top: 2.188em; /* 35px */
+	}
 }
 
 /*.csstransforms3d.nav-is-visible .container-wrap {
@@ -69,18 +76,28 @@
 //-----------------------------------
  
 .btn-nav-toggle {
-	@extend %text-hidden;
 	background: #fff;
 	border: none;
 	cursor: pointer;
 	font-size: 1em;
 	height: 3.125em; /* 50px */
-	left: 0;
 	outline: none;
 	padding: 0;
-	position: absolute;
-	top: 0;
 	width: 3.125em; /* 50px */
+}
+
+
+
+
+//  Nav open/close
+//-----------------------------------
+
+.btn-nav-open,
+.btn-nav-close {
+	@extend %text-hidden;
+	left: 0;
+	top: 0;
+	position: absolute;
 
 	@include mq($lap) {
 		left: auto;
@@ -103,6 +120,85 @@
 .nav-is-visible .btn-nav-close {
 	display: block;
 }
+
+
+
+
+//  Nav prev/next
+//-----------------------------------
+
+.btn-nav-prev,
+.btn-nav-next {
+	color: #fff;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: background-color $duration $easing, width $duration $easing;
+
+	@include mq($lap) {
+		left: 0;
+		right: auto;
+		top: 25em; /* 400px */
+	}
+}
+
+.btn-nav-prev {
+	right: 3.125em; /* 50px */
+
+	@include mq($lap) {
+		left: 0;
+		margin-top: -3.125em; /* 50px */
+		padding-left: 3.125em; /* 50px */
+		right: auto;
+	}
+}
+
+.btn-nav-next {
+	@include mq($lap) {
+		padding-right: 3.125em; /* 50px */
+	}
+}
+
+.btn-nav-prev:hover,
+.btn-nav-prev:focus,
+.btn-nav-next:hover,
+.btn-nav-next:focus {
+	background-color: $contrast;
+	
+	@include mq($lap) {
+		width: auto;
+	}
+}
+
+.btn-nav-prev span,
+.btn-nav-next span {
+	display: none;
+	width: 0;
+
+	@include mq($lap) {
+		display: block;
+		font-size: 1.125em; /* 18px */
+		line-height: 2.778; /* 50px from 18 */
+		text-transform: lowercase;
+		white-space: nowrap;
+		width: auto;
+	}
+}
+
+.btn-nav-prev span {
+	@include mq($lap) {
+		padding-right: 1em; /* 18px */
+	}
+}
+
+.btn-nav-next span {
+	@include mq($lap) {
+		padding-left: 1em; /* 18px */
+	}
+}
+
 
 
 
