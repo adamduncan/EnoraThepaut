@@ -450,7 +450,7 @@ h3 {
 .container-wrap {
 	left: 0;
 	position: relative;
-	transition: left 500ms ease-out;
+	transition: left 250ms ease-out;
 }
 
 .nav-is-visible .container-wrap {
@@ -464,7 +464,7 @@ h3 {
 	overflow: auto;
 	position: fixed;
 	top: 0;
-	transition: left 500ms ease-out;
+	transition: left 250ms ease-out;
 	width: 100%;
 }
 
@@ -476,15 +476,6 @@ h3 {
 	max-width: 20em; /* 320px */
 	padding: 5em 1.25em 1.25em; /* 80px 20px 20px */
 }
-
-/*.csstransforms3d.nav-is-visible .container-wrap {
-	left: auto;
-	transform: translateX(100%);
-	
-	@include mq($lap) {
-		transform: translateX(20em);
-	}
-}*/
 
 .btn-nav-toggle {
 	background: #fff;

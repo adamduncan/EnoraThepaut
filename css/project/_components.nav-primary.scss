@@ -14,7 +14,7 @@
 .container-wrap {
 	left: 0;
 	position: relative;
-	transition: left $duration*2 $easing;
+	transition: left $duration $easing;
 }
 
 .nav-is-visible .container-wrap {
@@ -38,7 +38,7 @@
 	overflow: auto;
 	position: fixed;
 	top: 0;
-	transition: left $duration*2 $easing;
+	transition: left $duration $easing;
 	width: 100%;
 
 	@include mq($lap) {
@@ -59,15 +59,6 @@
 		padding-top: 2.188em; /* 35px */
 	}
 }
-
-/*.csstransforms3d.nav-is-visible .container-wrap {
-	left: auto;
-	transform: translateX(100%);
-	
-	@include mq($lap) {
-		transform: translateX(20em);
-	}
-}*/
 
 
 
