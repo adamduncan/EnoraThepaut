@@ -17,6 +17,59 @@
 	}
 }
 
+//	Text indents 
+.text-content p:not(.text-small) {
+	@include mq($lap) {
+		text-indent: 4.333em; /* 78px from 16px */
+	}
+}
+
+.text-content .heading-inline + p:not(.text-small) {
+	@include mq($lap) {
+		margin-top: -1.778em; /* -32px from 18px */
+		position: relative;
+	}
+}
+
+.text-content .text-large {
+	@include mq($lap) {
+		text-indent: 2.6em; /* 78px from 30px */
+	}
+}
+.text-content .heading-inline + .text-large {
+	@include mq($lap) {
+		margin-top: -0.933em; /* -28px from 30px */
+		position: relative;
+	}
+}
+
+
+//	Text links
+//-----------------------------------
+.text-content p a {
+	background-image: linear-gradient(to left, rgba(17, 17, 17, 0.5) 50%, rgba(17, 17, 17, 0.5) 50%);
+	background-position: 0 1.112em; /* 0 20px from 18 */
+	background-repeat: repeat-x;
+	background-size: 1px 1px;
+	color: $dark-grey;
+	font-style: italic;
+	text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff;
+	transition: all $duration $easing;
+}
+.text-content p a:hover,
+.text-content p a:focus {
+	background-image: linear-gradient(to left, $highlight 50%, $highlight 50%);
+	color: $highlight;
+}
+
+.site-footer p a,
+.site-footer p a:hover,
+.site-footer p a:focus {
+	background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 50%);
+	color: #fff;
+	text-shadow: 1px 1px 0 $contrast, -1px 1px 0 $contrast;
+}
+
 
 
 
@@ -38,4 +91,8 @@
 .text-content .text-small {
 	font-size: 0.938em; /* 15px */
 	line-height: 1.333; /* 20px from 15 */	
+}
+
+.text-large .text-small {
+	font-size: 0.5em; /* 15px from 30 */
 }

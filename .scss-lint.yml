@@ -12,6 +12,10 @@ linters:
     BorderZero:
         enabled: true
 
+    # Prefer color literals (keywords or hexadecimal codes) to be used only in variable declarations. They should be referred to via variables everywhere else.
+    ColorVariable:
+        enabled: false
+
     # Prefer hexadecimal color codes over color keywords.
     ColorKeyword:
         enabled: true
@@ -69,7 +73,11 @@ linters:
     IdSelector:
         enabled: true
 
-    # The basenames of @imported SCSS partials should not begin with an underscore and should not include the filename extension.
+    # Avoid using !important in properties. It is usually indicative of a misunderstanding of CSS specificity and can lead to brittle code.
+    ImportantRule:
+        enabled: false
+
+   # The basenames of @imported SCSS partials should not begin with an underscore and should not include the filename extension.
     ImportPath:
         enabled: true
         leading_underscore: false
