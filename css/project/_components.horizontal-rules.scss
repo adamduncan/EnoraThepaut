@@ -1,0 +1,19 @@
+﻿//----------------------------------------------------------------------
+//	COMPONENTS
+//	HRs
+//----------------------------------------------------------------------
+
+.hr--small {
+	border-top: 0.125em solid;
+	margin: 0 0 1.375em; /* 0 0 22px */
+	width: 1.875em; /* 30px */
+
+	@include mq($lap) {
+		border-top-width: 0.188em;
+		width: 2.813em; /* 45px */
+	}
+}
+
+.hr--reverse {
+	border-top-color: #fff;
+}

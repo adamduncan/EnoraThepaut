@@ -9,7 +9,7 @@
 .p,
 .text-content p {
 	font-size: 1.125em; /* 18px */
-	line-height: 1.222; /* 22px from 18 */
+	line-height: 1.223; /* 22px from 18 */
 	margin-bottom: 1.111em; /* 20px from 18 */
 
 	@include mq($lap) {
@@ -17,11 +17,20 @@
 	}
 }
 
+.p--tight,
+.text-content .p--tight {
+	margin-bottom: 0.556em; /* 10px from 18 */
+}
+
 //	Text indents 
 .text-content p:not(.text-small) {
 	@include mq($lap) {
 		text-indent: 4.333em; /* 78px from 16px */
 	}
+}
+
+.no-indent {
+	text-indent: 0 !important;
 }
 
 .text-content .heading-inline + p:not(.text-small) {
@@ -46,13 +55,17 @@
 
 //	Text links
 //-----------------------------------
+.main-content p a,
+.main-content li a {
+	color: $dark-grey;
+	font-style: italic;
+}
+
 .text-content p a {
 	background-image: linear-gradient(to left, rgba(17, 17, 17, 0.5) 50%, rgba(17, 17, 17, 0.5) 50%);
 	background-position: 0 1.112em; /* 0 20px from 18 */
 	background-repeat: repeat-x;
 	background-size: 1px 1px;
-	color: $dark-grey;
-	font-style: italic;
 	text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff;
 	transition: all $duration $easing;
 }
@@ -78,6 +91,19 @@
 
 .text-indent {
 	text-indent: 4.167em; /* 75px from 18 */	
+}
+
+.text-x-large,
+.text-content .text-x-large {
+	font-size: 2.188em; /* 35px */
+	line-height: 1.143; /* 40px from 35 */
+	margin-bottom: 0.857em; /* 30px from 35 */
+
+	@include mq($lap) {
+		font-size: 3.125em; /* 50px */
+		line-height: 0.96; /* 48px from 50 */
+		margin-bottom: 0.64em; /* 32px from 50 */
+	}
 }
 
 .text-large,

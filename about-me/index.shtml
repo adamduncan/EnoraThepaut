@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<!-- #include file = "/_includes/head.html" -->
+<body>
+	<div class="container-outer">
+		<div class="container-wrap">
+			<header class="site-header" id="site-header" role="banner">
+				<button class="btn-nav-toggle btn-nav-open" id="btn-nav-open">Open navigation</button>
+				<button class="btn-nav-toggle btn-nav-close" id="btn-nav-close">Close navigation</button>
+			</header>
+			<!-- #include file = "/_includes/nav-primary.html" -->
+			<main class="main-content" id="content" role="main">
+				<!-- start text block -->
+				<div class="wrapper text-content section--text">
+					<div class="grid">
+						<div class="grid__col col-desk--2-3 float-desk--right section--sunk">
+							<h1 class="no-display">About me</h1>
+							<p class="text-x-large no-indent">Hello</p>
+							<hr class="hr--small" />
+							<p class="text-x-large no-indent">I am Enora, a designer and art director with a passion for solving problems with ideas incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid__col col-desk--2-3 float-desk--right">
+							<h2 class="heading-inline text-contrast">Overview</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis <a href="#">linking in body</a> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<h2 class="heading-inline text-contrast">Overview</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis <a href="#">linking in body</a> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<div class="grid__col col-desk--1-3">
+							<h2 class="text-highlight">How to get in touch with me?</h2>
+							<ul class="text-small">
+								<li>By email <a href="mailto:enora.thepaut@gmail.com">enora.thepaut@gmail.com</a></li>
+								<li>By phone <a href="tel:07535481555">07 53 54 81 555</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end text block -->
+			</main>
+			<!-- #include file = "/_includes/footer.html" -->
+		</div>
+	</div>
+	<!-- #include file = "/_includes/foot.html" -->
+</body>
+</html>

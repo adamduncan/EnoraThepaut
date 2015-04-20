@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<!-- #include file = "/_includes/head.html" -->
+<body>
+	<div class="container-outer">
+		<div class="container-wrap">
+			<header class="site-header" id="site-header" role="banner">
+				<button class="btn-nav-toggle btn-nav-open" id="btn-nav-open">Open navigation</button>
+				<button class="btn-nav-toggle btn-nav-close" id="btn-nav-close">Close navigation</button>
+			</header>
+			<!-- #include file = "/_includes/nav-primary.html" -->
+			<main class="main-content main-content--home main-content--cover" id="content" role="main">
+				<div class="container-table container-table--bottom">
+					<div class="container-table__inner container-table__inner--bottom">
+						<div class="wrapper">
+							<div class="grid">
+								<div class="grid__col col-lap--3-4 col-max--2-3">
+									<p class="text-x-large text-reverse">Hello</p>
+									<hr class="hr--small hr--reverse" />
+								</div>
+							</div>
+							<div class="grid">
+								<div class="grid__col col-lap--3-4 col-max--2-3">
+									<h1 class="text-x-large text-reverse">I am Enora, a designer and art director with a passion for solving problems with ideas.</h1>
+								</div>
+								<div class="grid__col col-lap--3-4 col-max--1-3 text-content">
+									<p class="no-indent p--tight text-reverse">Some of my most recent projects include:</p>
+									<ul>
+										<li class="list-links__item">
+											<a class="list-links__link text-reverse" href="/work/sainsburys-little-stories/">Sainsbury&rsquo;s Little stories</a>
+										<li>
+										<li class="list-links__item">
+											<a class="list-links__link text-reverse" href="#">BMW group &ndash; What moves you</a>
+										<li>
+									</ul>
+								</div>
+							</div>
+							<div class="grid">
+								<div class="grid__col col-lap--3-4 col-max--2-3 section--sunk">
+									<p class="p--tight text-small text-reverse">Get in touch </p>
+									<ul class="list-social">
+										<li class="list-social__item">
+											<a class="list-social__link icon--email" href="mailto:enora.thepaut@gmail.com">
+												<span class="list-social__span list-social__span--hidden">Email me<span>
+											</a>
+										</li>
+										<li class="list-social__item">
+											<a class="list-social__link icon--twitter" href="#" target="_blank">
+												<span class="list-social__span list-social__span--hidden">Enora Thepaut on Twitter<span>
+											</a>
+										</li>
+										<li class="list-social__item">
+											<a class="list-social__link icon--pinterest" href="#" target="_blank">
+												<span class="list-social__span list-social__span--hidden">Enora Thepaut on Pinterest<span>
+											</a>
+										</li>
+										<li class="list-social__item">
+											<a class="list-social__link icon--instagram" href="#" target="_blank">
+												<span class="list-social__span list-social__span--hidden">Enora Thepaut on Instagram<span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+	<!-- #include file = "/_includes/foot.html" -->
+</body>
+</html>

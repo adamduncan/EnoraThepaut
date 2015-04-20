@@ -1,26 +1,6 @@
 ﻿<!doctype html>
 <html class="no-js" lang="en">
-
-<head prefix="og: http://ogp.me/ns">
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Enora Thepaut</title>
-	<meta name="description" content="I am Enora, a designer and art director with a passion for solving problems with ideas.">
-
-	<!-- touch icons - 256px x 256px-->
-	<link rel="shortcut icon" href="icon-touch.png">
-	<link rel="apple-touch-icon-precomposed" href="icon-touch.png">
-
-	<!-- style -->
-	<link rel="stylesheet" href="/css/dist/global.min.css">
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Vollkorn:400italic,400">
-
-	<!-- head.min.js - include inline to avoid extra request -->
-	<script src="/js/dist/head.min.js"></script>
-</head>
+<!-- #include file = "/_includes/head.html" -->
 <body>
 	<div class="container-outer">
 		<div class="container-wrap">
@@ -30,30 +10,7 @@
 				<a class="btn-nav-toggle btn-nav-prev" href="#previous"><span>Previous project</span></a>
 				<a class="btn-nav-toggle btn-nav-next" href="#next"><span>Next project</span></a>
 			</header>
-			<nav class="container-nav-primary" id="container-nav-primary" role="navigation">
-				<div class="container-nav-primary__inner">
-					<p class="text-large">This is the work of Enora Th&eacute;paut, designer and art director in London.</p>
-					<ul class="nav-primary" id="nav-primary">
-						<li class="nav-primary__list-item">
-							<span class="nav-primary__link">Work</span>
-							<ul class="nav-primary__child-list">
-								<li class="nav-primary__child-list-item">
-									<a class="nav-primary__child-link" href="/work/sainsburys-little-stories/">Sainsbury&rsquo;s Little stories</a>
-								</li>
-								<!--<li class="nav-primary__child-list-item">
-									<a class="nav-primary__child-link" href="#">Sainsbury&rsquo;s Little Stories</a>
-								</li>-->
-							</ul>
-						</li>
-						<!--<li class="nav-primary__list-item">
-							<a class="nav-primary__link" href="#">Illustration</a>
-						</li>-->
-						<li class="nav-primary__list-item">
-							<a class="nav-primary__link" href="/about-me/">About me</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
+			<!-- #include file = "/_includes/nav-primary.html" -->
 			<main class="main-content" id="content" role="main">
 				<div class="hero" style="background-image: url(/images/work/bmw/bmw-hero.jpg)"></div>
 				<!-- start text block -->
@@ -157,23 +114,9 @@
 				</div>
 				<!-- end image block -->
 			</main>
-			<footer class="site-footer" role="contentinfo">
-				<div class="site-footer__inner">
-					<div class="wrapper">
-						<div class="grid">
-							<div class="grid__col col-desk--2-3 float-desk--right">	
-								<div class="text-content">
-									<p class="text-indent text-reverse">I am currently working full time at <a href="http://www.mslgroup.co.uk" target="_blank">MSLgroup London</a> but feel free to get in touch if you like what you see.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
+			<!-- #include file = "/_includes/footer.html" -->
 		</div>
 	</div>
-	<script>
-		loadJS('/js/dist/global.min.js');
-	</script>
+	<!-- #include file = "/_includes/foot.html" -->
 </body>
 </html>
