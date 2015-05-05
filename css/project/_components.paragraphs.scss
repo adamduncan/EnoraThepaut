@@ -40,7 +40,8 @@
 	}
 }
 
-.text-content .text-large {
+.text-content .text-large,
+.text-content .text-large.text-large {
 	@include mq($lap) {
 		text-indent: 2.6em; /* 78px from 30px */
 	}
@@ -55,10 +56,16 @@
 
 //	Text links
 //-----------------------------------
-.main-content p a,
-.main-content li a {
+.text-content p a,
+.text-content li a {
 	color: $dark-grey;
 	font-style: italic;
+}
+
+.main-content a:hover,
+.main-content a:focus {
+	color: $highlight;
+	transition: color $duration $easing;
 }
 
 .text-content p a {
@@ -72,7 +79,6 @@
 .text-content p a:hover,
 .text-content p a:focus {
 	background-image: linear-gradient(to left, $highlight 50%, $highlight 50%);
-	color: $highlight;
 }
 
 .site-footer p a,
@@ -91,6 +97,12 @@
 
 .text-indent {
 	text-indent: 4.167em; /* 75px from 18 */	
+}
+
+.text-force-wrap {
+	@include mq($lap) {
+		padding-right: 60px;
+	}	
 }
 
 .text-x-large,

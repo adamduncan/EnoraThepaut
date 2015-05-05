@@ -14,10 +14,13 @@
 .media-wrap__media-item {
 	display: block;
 	left: 0;
+	max-height: 100%;
+	max-width: 100%;
 	position: absolute;
 	top: 0;
 	width: 100%;
 }
+
 
 //	Ratios
 .media-wrap--1-1 {

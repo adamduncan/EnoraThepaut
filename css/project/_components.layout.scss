@@ -19,9 +19,12 @@
 }
 
 .main-content--cover {
-	height: 100vh;
 	min-height: 48em; /* 768px */
 	padding: 0;
+	
+	@include mq($lap) {
+		height: 100vh;
+	}
 }
 
 .main-content--home {
@@ -30,7 +33,7 @@
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 7.875em 0.875em  0.875em; /* 126px 14px 14px */
+	padding: 7.875em 0.875em 1.5em; /* 126px 14px 24px */
 
 	@include mq($lap) {
 		background-image: url('/images/bg-home-large.gif');
@@ -44,7 +47,6 @@
 		max-width: 23.875em; /* 382px */
 	}
 }
-
 
 
 //	Sections

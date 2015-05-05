@@ -31,6 +31,12 @@
 //  Nav container
 //-----------------------------------
 
+.nav-is-visible {
+	@include mq($lap - 1, max) {
+		overflow-y: hidden;
+	}
+}
+
 .container-nav-primary {
 	background-color: $highlight;
 	height: 100%;
