@@ -12,5 +12,11 @@ cite {
 }
 
 .blockquote .text-small {
-	white-space: nowrap;
+	@include mq($lap - 1, max) {
+		display: block;
+		padding-top: 1em; /* 15px from 15 */
+	}
+	@include mq($lap) {
+		white-space: nowrap;
+	}
 }
